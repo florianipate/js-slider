@@ -3,3 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+.slider-container{
+    width:600px;
+    margin: auto;
+    overflow: hidden;
+}
+.slide{
+    display: flex;
+    width: 100%;
+}
+img{
+    width: 100%;
+
+}
