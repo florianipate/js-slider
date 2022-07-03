@@ -6,14 +6,14 @@
 .carousel-container{
     width:400px;
     margin: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
    border: 1px solid black;
 }
 .carousel-slide{
     display: flex;
     width: 100%; 
     padding: 5px;
-    height: 600px;
+    /* height: 600px; */
 }
 img{
     width: 100%;
