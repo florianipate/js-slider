@@ -1,9 +1,18 @@
-const slider = document.querySelector('.slider-container');
-const slideImages = document.querySelectorAll('.slide img');
+const carouselSlider = document.querySelector('.carousel-container');
+const carouselImages = document.querySelectorAll('.carousel-slide img');
 
 //buttons
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 
 let counter = 1;
-slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+const size = carouselImages[0].clientWidth;
+carouselSlider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+nextBtn.addEventListener('click', () => {
+    carouselSlider.style.transition = "transform 0.4s ease-in-out";
+    counter++;
+    // console.log(counter);
+    carouselSlider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+});
