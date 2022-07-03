@@ -6,7 +6,9 @@
 .slider-container{
     width:600px;
     margin: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
+    border: 1px solid black;
+    padding: 5px;
 }
 .slide{
     display: flex;
