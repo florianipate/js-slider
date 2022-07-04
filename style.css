@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .carousel-container{
+    position: relative;
     width:400px;
     margin: auto;
     overflow: hidden;
@@ -17,5 +18,14 @@
 }
 img{
     width: 100%;
-
+}
+#prevBtn{
+    position: absolute;
+    top:50%;
+    left: 0;
+}
+#nextBtn{
+    position: absolute;
+    top:50%;
+    right: 0;
 }
